@@ -1,0 +1,91 @@
+main-content {
+    display: block;
+}
+
+main-content > content-container {
+    display   : block;
+    text-align: center;
+}
+
+main-content > content-container > * {
+    text-align: left;
+}
+
+main-content > content-container > content-header {
+    display: block;
+}
+
+main-content > content-container > content-description {
+    display: block;
+}
+
+main-content > content-container > canvas {
+    background: var(--secondary-background-color);
+    width     : 100%;
+    height    : 400px;
+    margin-top: 4rem;
+}
+
+main-content > content-container > graph-description {
+    display   : block;
+    color     : var(--secondary-text-color);
+    margin-top: 1rem;
+}
+
+main-content > content-container > annuals-header {
+    display   : block;
+    margin-top: 4rem;
+}
+
+main-content > content-container > annuals-description {
+    display: block;
+}
+
+main-content > content-container > annuals-annual {
+    display    : flex;
+    border-top : 2px solid var(--divider-color);
+    padding-top: 2rem;
+    margin     : 2rem 0;
+}
+
+main-content > content-container > a {
+    margin-top: 3rem;
+    color     : var(--text-color);
+}
+
+main-content > content-container > annuals-annual > annual-header {
+    display: block;
+    flex   : 1;
+}
+
+main-content > content-container > annuals-annual > annual-description {
+    display: block;
+    flex   : 1;
+    color  : var(--secondary-text-color);
+}
+
+main-content > content-container > annuals-annual > annual-description > annual-none {
+    opacity: 0.5;
+}
+
+main-content > content-container > annuals-annual > annual-description > a {
+    text-decoration: none;
+    border-bottom  : 1px solid currentColor;
+    margin-bottom  : 1px;
+    display        : inline-block;
+    color          : var(--link-color);
+    margin-right   : 1rem;
+    padding        : 0 .15rem;
+}
+
+main-content > content-container > annuals-annual > annual-description > a:hover {
+    border-bottom-width: 2px;
+    margin-bottom      : 0;
+}
+
+@media (max-width: 767.98px) {
+    main-content > content-container > annuals-annual > annual-header {
+        flex        : 0.4 !important;
+        margin-right: 2rem;
+    }
+}

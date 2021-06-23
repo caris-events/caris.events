@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="https://caris.events/assets/styles/global.css" />
+        <link rel="stylesheet" type="text/css" href="https://caris.events/assets/styles/statistics.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script src="https://caris.events/assets/scripts/statistics.js" defer></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://caris.events/assets/images/favicons/apple-touch-icon.png?v=9B9mwEyXv0"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="128x128"
+            href="https://caris.events/assets/images/favicons/favicon-128x128.png?v=9B9mwEyXv0"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="64x64"
+            href="https://caris.events/assets/images/favicons/favicon-64x64.png?v=9B9mwEyXv0"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://caris.events/assets/images/favicons/favicon-32x32.png?v=9B9mwEyXv0"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://caris.events/assets/images/favicons/favicon-16x16.png?v=9B9mwEyXv0"
+        />
+        <link rel="manifest" href="https://caris.events/assets/images/favicons/site.webmanifest?v=9B9mwEyXv0" />
+        <link
+            rel="mask-icon"
+            href="https://caris.events/assets/images/favicons/safari-pinned-tab.svg?v=9B9mwEyXv0"
+            color="#fa1f1f"
+        />
+        <link rel="shortcut icon" href="https://caris.events/assets/images/favicons/favicon.ico?v=9B9mwEyXv0" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta
+            name="msapplication-config"
+            content="https://caris.events/assets/images/favicons/browserconfig.xml?v=9B9mwEyXv0"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="報表 | 卡莉絲伊繁星" />
+        <meta
+            property="og:description"
+            content="向大眾所公開的財經報表與營收來源。這裡彙整了卡莉絲伊繁星的季度營運治理、財務和相關風險狀況供大眾與投資者檢視。"
+        />
+        <meta property="og:site_name" content="卡莉絲伊繁星" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="報表 | 卡莉絲伊繁星" />
+        <meta
+            name="twitter:description"
+            content="向大眾所公開的財經報表與營收來源。這裡彙整了卡莉絲伊繁星的季度營運治理、財務和相關風險狀況供大眾與投資者檢視。"
+        />
+        <meta property="og:image" content="https://caris.events/assets/images/social/cover.png" />
+        <meta name="twitter:image" content="https://caris.events/assets/images/social/cover-twitter.png" />
+        <title>報表 | 卡莉絲伊繁星</title>
+    </head>
+    <body>
+        <main>
+            <main-navbar>
+                <navbar-primary>
+                    <a href="https://caris.events/">首頁</a>
+                    <a href="https://caris.events/products">產品</a>
+                    <a href="https://caris.events/statistics" data-active>報表</a>
+                    <a href="https://caris.events/news">新聞</a>
+                    <a href="https://caris.events/about">關於</a>
+                    <a href="https://caris.events/policies">規範與協議</a>
+                </navbar-primary>
+
+                <navbar-secondary>
+                    <a href="https://github.com/caris-events" target="_blank">GitHub</a>
+                </navbar-secondary>
+            </main-navbar>
+
+            <main-content class="block">
+                <content-container class="container">
+                    <content-header class="header">向大眾所公開的財經報表與營收來源。</content-header>
+                    <content-description class="description"
+                        >這裡彙整了卡莉絲伊繁星的季度營運治理、財務和相關風險狀況供大眾與投資者檢視。</content-description
+                    >
+
+                    <canvas id="myChart"></canvas>
+                    <graph-description>※ 數字金額單位為 1 萬元新台幣，10 即為十萬元新台幣整。</graph-description>
+
+                    <annuals-header class="sub-header">檢視報表彙整</annuals-header>
+                    <annuals-description class="description"
+                        >年度的概略目標與其季度的所有報表與公開資訊和營運概況、治理報告。</annuals-description
+                    >
+
+                    <annuals-annual>
+                        <annual-header class="sub-header">2019 年</annual-header>
+                        <annual-description>
+                            <p>預備卡莉絲伊繁星的起始年份，在這一年裡沒有任何開銷和收入可供參考。</p>
+                            <annual-none>－沒有資料－</annual-none>
+                        </annual-description>
+                    </annuals-annual>
+
+                    <annuals-annual>
+                        <annual-header class="sub-header">2020 年</annual-header>
+                        <annual-description>
+                            <p>我們將會在這年專注於社群網站與週邊開發套件的鋪陳並穩定卡莉絲伊繁星連結服務。</p>
+                            <annual-none>－沒有資料－</annual-none>
+                            <!--<a href="#!">Q1</a>
+                        <a href="#!">Q2</a>
+                        <a href="#!">Q3</a>
+                        <a href="#!">Q4</a>-->
+                        </annual-description>
+                    </annuals-annual>
+
+                    <annuals-annual>
+                        <annual-header class="sub-header">2021 年</annual-header>
+                        <annual-description>
+                            <p>更新並依照季度追加新功能與整構組織會是這個年份最主要的目標。</p>
+                            <annual-none>－沒有資料－</annual-none>
+                        </annual-description>
+                    </annuals-annual>
+
+                    <annuals-annual>
+                        <annual-header class="sub-header">2022 年</annual-header>
+                        <annual-description>
+                            <p>在不同使用者層面中拓展商機與版圖，並整合多個服務之間的相關可能性。</p>
+                            <annual-none>－沒有資料－</annual-none>
+                        </annual-description>
+                    </annuals-annual>
+
+                    <a href="#!" class="block-link" data-disabled>檢視迄今為止的紀錄檔案</a>
+                </content-container>
+            </main-content>
+
+            <main-footer>
+                <footer-container>
+                    <footer-items>
+                        <items-item>
+                            <img src="https://caris.events/assets/images/logo.svg" />
+                        </items-item>
+
+                        <items-item>
+                            <item-header>合作和支援夥伴</item-header>
+                            <a href="https://teameowdev.wordpress.com/" target="_blank">TeaMeow 開發者</a><br />
+                            <a href="https://sorae.co/" target="_blank">對空音商事有限公司</a><br />
+                        </items-item>
+
+                        <items-item>
+                            <item-header>相關資訊</item-header>
+                            <a href="https://caris.events/policies/caris/" target="_blank">伊繁星最高協議</a><br />
+                            <a href="https://caris.events/policies/api/" target="_blank">應用程式介面連攜規定</a><br />
+                            <a href="https://caris.events/policies/privacy/" target="_blank">個人隱私與資料政策</a>
+                        </items-item>
+
+                        <items-item>
+                            <item-header>其他連結</item-header>
+                            <a href="#!">伊繁星身份</a><br />
+                            <a href="#!">合作夥伴系統</a><br />
+                            <a href="#!">聯絡我們</a>
+                        </items-item>
+                    </footer-items>
+                </footer-container>
+            </main-footer>
+        </main>
+    </body>
+</html>

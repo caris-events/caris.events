@@ -1,0 +1,265 @@
+/**
+ *
+ */
+
+main-brand {
+    display   : block;
+    background: var(--brand-color);
+    height    : 528px;
+}
+
+main-brand > brand-container {
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    position       : relative;
+}
+
+main-brand > brand-container > img[data-logo] {
+    pointer-events: none;
+    position      : absolute;
+    width         : 400px;
+    opacity       : 0.1;
+}
+
+main-brand > brand-container > img[data-logotype] {
+    pointer-events: none;
+    position      : absolute;
+    width         : 200px;
+    z-index       : 1;
+}
+
+main-brand > brand-container > img[data-outline] {
+    pointer-events: none;
+    position      : absolute;
+    width         : 200px;
+    z-index       : 1;
+    transform     : translate(-50%, -50%);
+    left          : calc(50% - -4px);
+    top           : calc(50% - -4px);
+}
+
+/**
+ *
+ */
+
+main-slogan {
+    display   : block;
+    background: var(--secondary-brand-color);
+    color     : var(--brand-text-color);
+    padding   : 1.5rem var(--side-padding);
+}
+
+main-slogan > slogan-container {
+    display: block;
+}
+
+main-slogan > slogan-container > slogan-header {
+    display       : block;
+    text-transform: uppercase;
+}
+
+main-slogan > slogan-container > slogan-description {
+    display: block;
+}
+
+/**
+ *
+ */
+
+main-features {
+    display: block;
+}
+
+main-features > features-container {
+    display: block;
+}
+
+main-features > features-container > features-header,
+main-features > features-container > features-description {
+    display: block;
+}
+
+main-features > features-container > features-details {
+    display: flex;
+    margin : 3rem -1rem 0 -1rem;
+}
+
+main-features > features-container > features-details > details-item {
+    margin        : 1rem;
+    flex          : 1;
+    display       : flex;
+    flex-direction: column;
+}
+
+main-features > features-container > features-details > details-item > item-symbol {
+    background     : var(--secondary-background-color);
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 3rem 1rem;
+    margin-bottom  : 2rem;
+}
+
+main-features > features-container > features-details > details-item > item-symbol::after {
+    content       : "";
+    display       : block;
+    padding-bottom: 62%;
+}
+
+main-features > features-container > features-details > details-item > item-symbol > img {
+    width         : 120px;
+    pointer-events: none;
+    user-select   : none;
+}
+
+main-features > features-container > features-details > details-item > item-header {
+    display      : block;
+    font-weight  : bold;
+    flex-grow    : 1;
+    margin-bottom: 1rem;
+}
+
+main-features > features-container > features-details > details-item > item-description {
+    display  : block;
+    flex-grow: 1;
+}
+
+main-features > features-container > features-footer {
+    display    : flex;
+    align-items: center;
+}
+
+main-features > features-container > features-footer > footer-primary {
+    display: block;
+}
+
+main-features > features-container > features-footer > footer-primary > a {
+    color: var(--text-color);
+}
+
+main-features > features-container > features-footer > footer-primary > a:hover {
+    text-decoration: underline;
+}
+
+main-features > features-container > features-footer > footer-secondary {
+    display    : block;
+    margin-left: auto;
+    color      : var(--secondary-text-color);
+    margin-top : 3rem;
+    font-size  : .95rem;
+}
+
+main-features > features-container > features-footer > footer-secondary > a {
+    text-decoration: none;
+    color          : var(--secondary-text-color);
+    border-bottom  : 1px solid currentColor;
+}
+
+main-features > features-container > features-footer > footer-secondary > a:hover {
+    border-bottom-width: 2px;
+}
+
+/**
+ *
+ */
+
+main-country {
+    display   : block;
+    background: var(--inverted-background-color);
+    padding   : 3rem var(--side-padding) 7rem var(--side-padding);
+}
+
+main-country > country-container {
+    display: flex;
+    color  : var(--inverted-text-color);
+}
+
+main-country > country-container > country-primary {
+    display     : block;
+    flex        : 1;
+    font-size   : 1.3rem;
+    font-weight : bold;
+    margin-right: 2rem;
+}
+
+main-country > country-container > country-secondary {
+    display    : block;
+    margin-left: auto;
+    flex       : 1;
+}
+
+main-country > country-container > country-secondary > a {
+    color: var(--inverted-text-color);
+}
+
+/**
+ * Tablet
+ */
+
+@media (max-width: 991.98px) {
+    main-features > features-container > features-details > details-item > item-symbol > img {
+        width: 90px;
+    }
+
+    main-features > features-container > features-details {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    main-brand {
+        height: 400px;
+    }
+
+    main-brand > brand-container > img[data-logo] {
+        width: 280px;
+    }
+
+    main-brand > brand-container > img[data-logotype] {
+        width: 150px;
+    }
+
+    main-brand > brand-container > img[data-outline] {
+        width: 150px;
+    }
+
+    main-features > features-container > features-details {
+        flex-direction: column;
+    }
+
+    main-features > features-container > features-details > details-item > item-symbol {
+        padding: 0;
+    }
+
+    main-features > features-container > features-footer > footer-secondary {
+        margin-top: 1rem;
+    }
+
+    main-features > features-container > features-footer {
+        flex-direction: column-reverse;
+    }
+
+    main-features > features-container > features-footer > footer-primary {
+        width: 100%;
+    }
+
+    main-features > features-container > features-footer > footer-primary > a {
+        display   : block !important;
+    }
+
+    main-country {
+        padding-top   : 2rem;
+        padding-bottom: 3rem;
+    }
+
+    main-country > country-container {
+        flex-direction: column;
+    }
+
+    main-country > country-container > country-secondary > a {
+        display   : block !important;
+        margin-top: 4rem  !important;
+    }
+}

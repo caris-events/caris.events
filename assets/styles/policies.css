@@ -1,0 +1,52 @@
+main-policies,
+main-policies > policies-container,
+main-policies > policies-container > policies-header,
+main-policies > policies-container > policies-description {
+    display: block;
+}
+
+main-policies > policies-container > policies-description + policies-policy {
+    margin-top: 4rem;
+}
+
+main-policies > policies-container > policies-policy {
+    display    : flex;
+    border-top : 2px solid var(--divider-color);
+    padding-top: 2rem;
+    margin     : 2rem 0;
+}
+
+main-policies > policies-container > policies-policy > policy-header {
+    display: block;
+    flex   : 1;
+}
+
+main-policies > policies-container > policies-policy > policy-description {
+    display: block;
+    flex   : 1;
+    color  : var(--secondary-text-color);
+}
+
+main-policies > policies-container > policies-policy > policy-description > a {
+    text-decoration: none;
+    border-bottom  : 1px solid currentColor;
+    margin-bottom  : 1px;
+    display        : inline-block;
+    color          : var(--link-color);
+}
+
+main-policies > policies-container > policies-policy > policy-description > a:hover {
+    border-bottom-width: 2px;
+    margin-bottom      : 0;
+}
+
+@media (max-width: 767.98px) {
+    main-policies > policies-container > policies-policy > policy-header {
+        flex        : 0.5 !important;
+        margin-right: 2rem;
+    }
+
+    main-policies > policies-container > policies-policy {
+        flex-direction: column;
+    }
+}

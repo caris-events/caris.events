@@ -1,0 +1,26 @@
+main-news,
+main-news > news-container,
+main-news > news-container > news-header,
+main-news > news-container > news-description {
+    display: block;
+}
+
+main-news > news-container > news-description + news-item {
+    margin-top: 4rem;
+}
+
+main-news > news-container > news-item {
+    display    : flex;
+    border-top : 2px solid var(--divider-color);
+    padding-top: 2rem;
+    margin     : 2rem 0;
+}
+
+main-news > news-container > news-empty {
+    display    : block;
+    border-top : 2px solid var(--divider-color);
+    padding-top: 8rem;
+    margin     : 2rem 0 6rem;
+    text-align : center;
+    color      : var(--secondary-text-color);
+}

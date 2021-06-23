@@ -1,0 +1,282 @@
+main-featured {
+    display   : block;
+    background: var(--inverted-background-color) !important;
+    color     : var(--inverted-text-color);
+}
+
+main-featured > featured-container {
+    display: block;
+}
+
+main-featured > featured-container > featured-label {
+    display    : block;
+    font-weight: bold;
+    color      : var(--inverted-secondary-text-color);
+}
+
+main-featured > featured-container > featured-picture {
+    display   : block;
+    margin-top: 1rem;
+}
+
+main-featured > featured-container > featured-picture > img {
+    max-width: 100%;
+    filter   : grayscale(0.5);
+}
+
+main-featured > featured-container > featured-content {
+    display   : flex;
+    margin-top: 1rem;
+}
+
+main-featured > featured-container > featured-content > featured-header {
+    flex        : 1;
+    display     : block;
+    margin-right: 2rem;
+}
+
+main-featured > featured-container > featured-content > featured-description {
+    flex   : 1;
+    display: block;
+}
+
+main-featured > featured-container > featured-content > featured-description > a {
+    color     : var(--inverted-text-color);
+    margin-top: 1.3rem !important;
+}
+
+/**
+ *
+ */
+
+main-products {
+    display: block;
+}
+
+main-products > products-container {
+    display   : block;
+    text-align: center;
+}
+
+main-products > products-container > a {
+    text-decoration: none;
+    border         : 2px solid currentColor;
+    padding        : .5rem 2.5rem;
+    color          : var(--text-color);
+    font-weight    : 500;
+    display        : inline-block;
+    margin-top     : 6rem;
+}
+
+main-products > products-container > a:hover {
+    text-decoration: underline;
+}
+
+main-products > products-container > products-product {
+    display   : flex;
+    text-align: left;
+}
+
+main-products > products-container > products-product > product-content {
+    display: block;
+}
+
+main-products > products-container > products-product > product-content > product-header {
+    display: block;
+}
+
+main-products > products-container > products-product > product-content > product-description {
+    display: block;
+}
+
+main-products > products-container > products-product > product-content > product-description > product-links {
+    display: block;
+}
+
+main-products > products-container > products-product > product-content > product-description > product-links > a {
+    color: var(--text-color);
+}
+
+main-products > products-container > products-product > product-content > product-description > product-links > a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+main-products > products-container > products-product:first-child > product-content > product-description > product-links {
+    display: flex;
+}
+
+main-products > products-container > products-product:first-child > product-content > product-description > product-links > a {
+    flex         : 1;
+    text-align   : center;
+    padding-left : 0;
+    padding-right: 0;
+}
+
+main-products > products-container > products-product:first-child > product-content > product-description > product-links > a :last-child {
+    flex: 1.4;
+}
+
+main-products > products-container > products-product > product-picture {
+    display: block;
+}
+
+main-products > products-container > products-product > product-picture > img {
+    max-width : 100%;
+    object-fit: cover;
+    filter    : grayscale(0.5);
+}
+
+main-products > products-container > products-product[data-columns] > product-picture > img {
+    height: 392px;
+}
+
+main-products > products-container > products-product[data-columns] > product-content {
+    margin-right: 2rem;
+}
+
+main-products > products-container > products-product[data-columns] > product-content > product-description,
+main-products > products-container > products-product[data-full] > product-content > product-description {
+    margin-top: 1rem;
+}
+
+main-products > products-container > products-product[data-columns] > product-content,
+main-products > products-container > products-product[data-columns] > product-picture {
+    flex: 1;
+}
+
+main-products > products-container > products-product[data-full] {
+    flex-wrap: wrap;
+}
+
+main-products > products-container > products-product[data-full] > product-content > product-description {
+    display: flex;
+}
+
+main-products > products-container > products-product[data-full] > product-picture {
+    margin-top: 1rem;
+}
+
+main-products > products-container > products-product[data-full] > product-content > product-description > p {
+    flex        : 1;
+    margin-right: 2rem;
+}
+
+main-products > products-container > products-product[data-columns] > product-content > product-description > product-links > a {
+    margin-top: 1rem;
+}
+
+main-products > products-container > products-product[data-full] > product-content > product-description > product-links > a {
+    margin-top: .3rem;
+}
+
+main-products > products-container > products-product:not(:first-child) {
+    margin-top : 4rem;
+    padding-top: 4rem;
+    border-top : 1px solid var(--divider-color);
+}
+
+/**
+ *
+ */
+
+main-products > products-container > products-libraries {
+    display    : flex;
+    margin-top : 4rem;
+    padding-top: 4rem;
+    border-top : 1px solid var(--divider-color);
+    text-align : left;
+}
+
+main-products > products-container > products-libraries > libraries-category {
+    display: block;
+    flex   : 1;
+}
+
+main-products > products-container > products-libraries > libraries-category > libraries-header {
+    display      : block;
+    font-weight  : bold;
+    color        : var(--secondary-text-color);
+}
+
+main-products > products-container > products-libraries > libraries-category > libraries-library {
+    display   : block;
+    margin-top: 1.5rem;
+}
+
+main-products > products-container > products-libraries > libraries-category > libraries-library > library-header {
+    display    : block;
+    font-weight: bold;
+    color      : var(--text-color);
+}
+
+main-products > products-container > products-libraries > libraries-category > libraries-library > library-header > a {
+    border-bottom   : 2px solid transparent;
+    color           : var(--text-color);
+    text-decoration: none;
+}
+
+main-products > products-container > products-libraries > libraries-category > libraries-library > library-header > a:hover {
+    border-bottom-color: currentColor;
+}
+
+main-products > products-container > products-libraries > libraries-category > libraries-library > library-description {
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    main-featured > featured-container > featured-content {
+        flex-direction: column;
+    }
+
+    main-featured > featured-container > featured-content > featured-description {
+        margin-top: 1rem;
+    }
+
+    main-featured > featured-container > featured-content > featured-description > a {
+        display: block !important;
+    }
+
+    main-products > products-container > products-product {
+        flex-direction: column-reverse;
+    }
+
+    main-products > products-container > products-product[data-columns] > product-content {
+        margin-right: 0 !important;
+    }
+
+    main-products > products-container > products-product[data-columns] > product-picture {
+        margin-bottom: 1rem;
+    }
+
+    main-products > products-container > products-product[data-columns] > product-picture > img {
+        height: 226px;
+        width : 100%;
+    }
+
+    main-products > products-container > products-product[data-full] > product-picture {
+        margin-top   : 0;
+        margin-bottom: 1rem;
+    }
+
+    main-products > products-container > products-product[data-full] > product-content > product-description {
+        flex-direction: column;
+    }
+
+    main-products > products-container > products-product[data-full] > product-content > product-description > product-links > a {
+        display   : block;
+        margin-top: 1rem;
+    }
+
+    main-products > products-container > products-libraries {
+        flex-direction: column;
+    }
+
+    main-products > products-container > products-libraries > libraries-category {
+        margin-bottom: 2rem;
+    }
+
+    main-products > products-container > a {
+        display   : block !important;
+        margin-top: 2rem;
+    }
+}

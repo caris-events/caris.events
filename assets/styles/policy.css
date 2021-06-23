@@ -1,0 +1,96 @@
+main-slate {
+    display   : block;
+    background: var(--inverted-background-color);
+    color     : var(--inverted-text-color);
+}
+
+main-slate > slate-container,
+main-slate > slate-container > slate-header,
+main-slate > slate-container > slate-description {
+    display: block;
+}
+
+/**
+ *
+ */
+
+main-date {
+    display   : block;
+    background: var(--inverted-secondary-background-color);
+    color     : var(--inverted-text-color);
+    padding   : 1rem var(--side-padding);
+    font-size : .95rem;
+}
+
+main-date > date-container {
+    display: block;
+}
+
+main-date > date-container > a {
+    text-decoration: none;
+    color          : var(--inverted-text-color);
+    border-bottom  : 1px solid currentColor;
+}
+
+main-date > date-container > a:hover {
+    border-bottom-width: 2px;
+}
+
+/**
+ *
+ */
+
+main-content {
+    display: block;
+}
+
+main-content a {
+    text-decoration: none;
+    color          : var(--link-color);
+    border-bottom  : 1px solid currentColor;
+}
+
+main-content a:hover {
+    border-bottom-width: 2px;
+}
+
+main-content > content-container {
+    display: block;
+}
+
+main-content > content-container > p:first-child {
+    margin-top: 0;
+}
+
+main-content > content-container > content-header {
+    display   : block;
+    margin-top: 4rem;
+}
+
+main-content > content-container > content-message {
+    display   : block;
+    background: var(--secondary-background-color);
+    padding   : 2rem;
+    margin-top: 3rem;
+}
+
+main-content > content-container > content-message:first-child {
+    margin-top   : 0;
+    margin-bottom: 3rem;
+}
+
+main-content > content-container > content-message p:first-child {
+    margin-top: 0;
+}
+
+main-content > content-container > content-message p:last-child {
+    margin-bottom: 0;
+}
+
+main-content > content-container > content-message > message-quote {
+    display     : block;
+    border-left : 5px solid var(--quote-line-color);
+    margin      : 0;
+    padding     : 1rem 0 1rem 2rem;
+    padding-left: 2rem;
+}

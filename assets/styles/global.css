@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap&subset=chinese-traditional");
+
+:root {
+    --font-size  : 16px;
+    --line-height: 1.85;
+
+    --brand-color          : #fa4b4b;
+    --secondary-brand-color: #ea4646;
+    --brand-text-color     : #fff;
+
+    --page-width                : 960px;
+    --page-background-color     : #F1F1F1;
+    --secondary-background-color: #f9f9f9;
+    --page-container-width      : 768px;
+    --side-padding              : 2rem;
+
+    --text-color          : #333;
+    --hover-text-color    : #565656;
+    --link-color          : #08607f;
+    --secondary-text-color: #777;
+    --divider-color       : #f0f0f0;
+    --background-color    : #FFF;
+    --quote-line-color    : #d5d5d5;
+    --secondary-label-color: #e4e4e4;
+
+    --inverted-text-color          : #FFF;
+    --inverted-hover-text-color    : #EEE;
+    --inverted-secondary-text-color: #DDD;
+    --inverted-link-color          : #FFF;
+    --inverted-divider-color       : #444;
+    --inverted-background-color    : #333;
+    --inverted-secondary-background-color    : #292929;
+
+    --sub-header-font-size : 1.3rem;
+    --sub-header-font-width: bold;
+
+    --header-font-size : 1.6rem;
+    --header-font-width: bold;
+
+    --description-font-size : 1rem;
+    --description-font-width: 500;
+}
+
+html {
+    font-size  : var(--font-size);
+    font-family: "Noto Sans TC";
+    color      : var(--text-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding   : 0;
+    margin    : 0;
+    background: var(--page-background-color);
+}
+
+body > main {
+    line-height: var(--line-height);
+    max-width  : var(--page-width);
+    margin     : 2rem auto 6rem auto;
+}
+
+/**
+ *
+ */
+
+ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+ul ul {
+    margin-left: 3rem;
+}
+
+p:first-child {
+    margin-block-start: 0;
+}
+
+p:last-child {
+    margin-block-end: 0;
+}
+
+/**
+ * 內容文字容器
+ */
+
+.container {
+    max-width: var(--page-container-width);
+    margin   : 0 auto;
+}
+
+/**
+ * 內容文字區塊
+ */
+
+.block {
+    background: var(--background-color);
+    padding   : 4rem var(--side-padding) 4.5rem;
+}
+
+.block-link {
+    margin-top     : 3rem;
+    text-decoration: none;
+    border         : 2px solid currentColor;
+    padding        : .5rem 2.5rem;
+    font-weight    : 500;
+    display        : inline-block;
+    text-align     : center;
+}
+
+.block-link:hover {
+    text-decoration: underline;
+}
+
+.block-link[data-disabled] {
+    opacity       : 0.4;
+    pointer-events: none;
+}
+
+.header {
+    font-size  : var(--header-font-size);
+    font-weight: var(--header-font-width);
+}
+
+.sub-header {
+    font-size  : var(--sub-header-font-size);
+    font-weight: var(--sub-header-font-width);
+}
+
+.description {
+    font-weight: var(--description-font-width);
+}
+
+.slate {
+    padding: 2.5rem var(--side-padding);
+}
+
+/**
+ * 中華民國（台灣）國旗
+ */
+
+/** https://github.com/lipis/flag-icon-css */
+.flag {
+    height        : 1rem;
+    border-radius : .2rem;
+    vertical-align: middle;
+    margin-top    : -3px;
+    opacity       : 0.85;
+    user-select   : none;
+}
+
+/**
+ *
+ */
+
+body > main > main-navbar {
+    display      : flex;
+    margin-bottom: 2rem;
+}
+
+body > main > main-navbar > navbar-primary {
+    display: flex;
+    flex   : 1;
+}
+
+body > main > main-navbar > navbar-secondary {
+    display: block;
+}
+
+body > main > main-navbar > navbar-primary > a,
+body > main > main-navbar > navbar-secondary > a {
+    padding        : .5rem 1.5rem;
+    display        : inline-block;
+    text-decoration: none;
+    font-weight    : 500;
+    color          : var(--text-color);
+    border-bottom  : 2px solid transparent;
+}
+
+body > main > main-navbar > navbar-primary > a:hover,
+body > main > main-navbar > navbar-secondary > a:hover {
+    color: var(--hover-text-color);
+}
+
+body > main > main-navbar > navbar-primary > a[data-active] {
+    color              : var(--text-color);
+    border-bottom-color: currentColor;
+}
+
+/**
+ *
+ */
+
+body > main > main-footer {
+    display: block;
+}
+
+body > main > main-footer > footer-container {
+    display: block;
+}
+
+body > main > main-footer > footer-container > footer-items {
+    display: flex;
+    margin : 3rem -2rem;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item {
+    display   : block;
+    flex      : 1;
+    margin    : 0 2rem 0 0;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item:first-child {
+    text-align : center;
+    flex       : 1.4;
+    margin-left: 2rem;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item:last-child {
+    margin-right: 0;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item > img {
+    width: 160px;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item > item-header {
+    display      : block;
+    font-size    : var(--sub-header-font-size);
+    font-weight  : var(--sub-header-font-width);
+    margin-bottom: 1rem;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item > a {
+    text-decoration: none;
+    font-weight    : 500;
+    border-bottom  : 2px solid transparent;
+    color          : var(--text-color);
+    display        : inline-block;
+}
+
+body > main > main-footer > footer-container > footer-items > items-item > a:hover {
+    border-bottom-color: currentColor;
+}
+
+/**
+ * Tablet
+ */
+
+@media (max-width: 991.98px) {
+    :root {
+        --page-width: calc(100% - (var(--side-padding) * 2));
+    }
+
+    .block {
+        padding-top   : 3rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --page-width  : 100%;
+        --side-padding: 1.5rem;
+    }
+
+    .block {
+        padding-top   : 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    body > main {
+        margin-top   : 1rem;
+        margin-bottom: 1rem;
+    }
+
+    body > main > main-navbar {
+        white-space  : nowrap;
+        overflow-x   : scroll;
+        margin       : 0 0 1rem var(--side-padding);
+    }
+
+    body > main > main-footer {
+        margin: 0 var(--side-padding);
+    }
+
+    body > main > main-footer > footer-container > footer-items {
+        flex-direction: column-reverse;
+        margin        : 2rem 0;
+    }
+
+    body > main > main-footer > footer-container > footer-items > items-item {
+        margin       : 0;
+        margin-bottom: 1rem;
+    }
+
+    body > main > main-footer > footer-container > footer-items > items-item > item-header {
+        margin-bottom: 0;
+    }
+
+    body > main > main-footer > footer-container > footer-items > items-item:first-child {
+        margin    : 0;
+        margin-top: 1rem;
+    }
+}
