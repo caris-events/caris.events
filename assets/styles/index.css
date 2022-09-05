@@ -68,6 +68,25 @@ main-slogan > slogan-container > slogan-description {
  *
  */
 
+company-notice {
+    display      : block;
+    padding      : 1rem 2rem;
+    background   : #f6ff0d;
+    color        : #0c0c0c;
+    border-left  : 10px solid #d9e115;
+    margin-bottom: 2rem;
+    font-weight  : 500;
+    background   : repeating-linear-gradient(45deg, #f7ff3f, #f7ff3f 10px, #f2fb17 10px, #f2fb17 20px);
+}
+
+company-notice a {
+    color: inherit;
+}
+
+/**
+ *
+ */
+
 main-features {
     display: block;
 }
@@ -256,6 +275,11 @@ main-country > country-container > country-secondary > a {
 
     main-country > country-container {
         flex-direction: column;
+    }
+
+    main-country > country-container > country-primary {
+        margin-right : 0;
+        margin-bottom: 1rem;
     }
 
     main-country > country-container > country-secondary > a {

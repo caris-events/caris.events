@@ -120,6 +120,10 @@ p:last-child {
     pointer-events: none;
 }
 
+.block-link[data-invisible] {
+    visibility: hidden;
+}
+
 .header {
     font-size  : var(--header-font-size);
     font-weight: var(--header-font-width);

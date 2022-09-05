@@ -26,6 +26,19 @@ main-content > content-container > canvas {
     margin-top: 4rem;
 }
 
+main-content > content-container > graph-placeholder {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    background     : #f9f9f9;
+    color          : var(--secondary-text-color);
+    font-weight    : 500;
+    font-size      : 16px;
+    width          : 100%;
+    height         : 400px;
+    margin-top     : 4rem;
+}
+
 main-content > content-container > graph-description {
     display   : block;
     color     : var(--secondary-text-color);
